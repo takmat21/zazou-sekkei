@@ -396,3 +396,29 @@ dialog.ba-dlg img{display:block;width:100%;height:auto;cursor:zoom-in}
 dialog.ba-dlg.full img{width:1600px;max-width:none;cursor:zoom-out}
 dialog.ba-dlg .ba-bar{position:sticky;top:0;left:0;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:8px 12px;background:#24344f;color:#fff;font-size:14px;font-weight:600}
 dialog.ba-dlg button{font:inherit;font-size:14px;font-weight:700;background:#fff;color:#24344f;border:0;border-radius:6px;padding:6px 14px;cursor:pointer}
+/* 11/27 SEO：ビフォー・アフターの見本の札・早見表・運営者のページ */
+.ba h3{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px}
+.ba-tag{font-size:12px;font-weight:700;letter-spacing:.06em;color:var(--main);border:1px solid var(--main);border-radius:999px;padding:1px 10px}
+.ba-lab{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.08em;color:#fff;background:var(--main);border-radius:4px;padding:0 8px;margin-right:8px}
+.ba+.ba{margin-top:56px}
+dl.ba-meta{margin:20px 0 14px;max-width:52em;background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:4px 20px}
+dl.ba-meta dd small{display:block;font-size:12px;color:var(--sub)}
+dl.ba-meta dt:last-of-type,dl.ba-meta dd:last-of-type{border-bottom:0}
+.ba-dl{margin-top:0}
+.tr-tw.tr-wide{max-width:72em;overflow-x:auto}
+.tr-wide table.tr-t tbody th{width:auto;min-width:9em}
+.tr-wide table.tr-t td small,.tr-wide table.tr-t th small{font-weight:400;color:var(--sub)}
+@media (max-width:600px){.tr-wide table.tr-t thead{display:none}.tr-wide table.tr-t tr{display:block;border-bottom:1px solid var(--line);padding:8px 0}.tr-wide table.tr-t th,.tr-wide table.tr-t td{display:block;width:auto!important;border-bottom:0;padding:4px 12px}.tr-wide table.tr-t td::before{content:attr(data-h);display:block;font-size:12px;color:var(--sub);font-weight:600}}
+.ab-prof{display:grid;grid-template-columns:14em 1fr;gap:28px;max-width:60em;background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:24px 26px}
+.ab-name span{display:block;font-size:13px;color:var(--sub);letter-spacing:.1em}
+.ab-name b{display:block;font-size:26px;letter-spacing:.12em}
+dl.ab-hist{margin:0}
+dl.ab-hist>div{display:grid;grid-template-columns:11em 1fr;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
+dl.ab-hist>div:last-child{border-bottom:0}
+dl.ab-hist dt{font-weight:700}
+dl.ab-hist dt small{display:block;font-weight:500;color:var(--sub);font-size:13px}
+dl.ab-hist dd{margin:0;color:var(--sub);font-size:15px}
+.ab-skills{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;max-width:60em}
+@media (max-width:760px){.ab-prof{grid-template-columns:1fr;gap:12px;padding:18px}dl.ab-hist>div{grid-template-columns:1fr;gap:2px}.ab-skills{grid-template-columns:1fr}}
+.tr-cards{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.tr-h3{font-size:17px;font-weight:700;letter-spacing:.06em;margin:32px 0 12px}

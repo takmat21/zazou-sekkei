@@ -1,0 +1,11 @@
+import * as THREE from 'three';import {OrbitControls} from 'three/addons/controls/OrbitControls.js';import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';import {RoomEnvironment} from 'three/addons/environments/RoomEnvironment.js';
+const st=document.getElementById('stage');const r=new THREE.WebGLRenderer({antialias:true});r.setPixelRatio(Math.min(devicePixelRatio,2));r.toneMapping=THREE.ACESFilmicToneMapping;st.appendChild(r.domElement);
+const sc=new THREE.Scene();sc.background=new THREE.Color('#eef1f4');sc.environment=new THREE.PMREMGenerator(r).fromScene(new RoomEnvironment(),.04).texture;
+const cam=new THREE.PerspectiveCamera(35,1,1,10000);cam.position.set(650,520,750);const c=new OrbitControls(cam,r.domElement);c.target.set(0,50,0);c.enableDamping=true;
+sc.add(new THREE.HemisphereLight('#fff','#99a',.6));const d=new THREE.DirectionalLight('#fff',1.2);d.position.set(300,800,400);sc.add(d);
+const g=new THREE.GridHelper(1400,28,'#c5ccd3','#d6dce2');sc.add(g);
+let work=null;new GLTFLoader().load('jig.glb',gl=>{const m=gl.scene;m.traverse(o=>{if(o.isMesh){o.material.metalness=.25;o.material.roughness=.45;if(/work/.test(o.name+(o.parent?o.parent.name:''))){work=work||[];work.push(o);o.material.transparent=true;o.material.opacity=.55;}}});sc.add(m);});
+document.getElementById('w').onclick=e=>{if(!work)return;const v=!work[0].visible;work.forEach(o=>o.visible=v);e.target.classList.toggle('on',v);};
+document.getElementById('r').onclick=e=>{c.autoRotate=!c.autoRotate;e.target.classList.toggle('on',c.autoRotate);};
+function sz(){const w=st.clientWidth,h=st.clientHeight;r.setSize(w,h);cam.aspect=w/h;cam.fov=w<h?55:35;cam.updateProjectionMatrix();}addEventListener('resize',sz);sz();
+(function l(){requestAnimationFrame(l);c.update();r.render(sc,cam);})();
