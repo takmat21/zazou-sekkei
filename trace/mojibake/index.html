@@ -23,6 +23,7 @@
 <script>document.documentElement.classList.add('js')</script>
 <link rel="preload" as="image" href="../../img/ph_work.webp" type="image/webp">
 <link rel="stylesheet" href="../../site.css?v=1127o">
+<link rel="stylesheet" href="../../tools/dxf-mojibake/widget.css?v=1127a" data-dxfm-css>
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -133,6 +134,14 @@
    "mainEntity": [
     {
      "@type": "Question",
+     "name": "自分で直すことはできますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "このページの「ここで直す」で、無料で直せます。ファイルはブラウザの中だけで直し、どこにも送りません。直らない所は「直せませんでした」と出るので、そのDXFをお送りください。"
+     }
+    },
+    {
+     "@type": "Question",
      "name": "DXFの文字化けは、なぜ起きるのですか？",
      "acceptedAnswer": {
       "@type": "Answer",
@@ -180,7 +189,7 @@
 <body>
 <header class="top" id="top"><div class="wrap">
   <a class="brand" href="../../"><img src="../../img/mark.png" alt=""><span>ZAZOU 設計Works <span class="fld">DXFの文字化け</span><small>ZAZOU株式会社</small></span></a>
-  <nav class="menu" aria-label="ページ内"><a href="#cause">原因</a><a href="#self">試せること</a><a href="#price">料金</a><a href="#faq">よくある質問</a></nav>
+  <nav class="menu" aria-label="ページ内"><a href="#fix">ここで直す</a><a href="#cause">原因</a><a href="#self">試せること</a><a href="#price">料金</a><a href="#faq">よくある質問</a></nav>
   <a class="cta" href="#contact">ご相談</a>
 </div></header>
 
@@ -191,10 +200,18 @@
     <ul class="badges"><li>Jw_cad・AutoCAD</li><li>DXF・JWW・PDF</li><li>在宅・全国対応</li></ul>
     <h1>DXFの文字化け、<br><span class="nb">修正します</span></h1>
     <p class="lead">受け取った DXF を開いたら、文字が「?」や記号になって読めない。<br>そんな DXF を、お使いのCADで読める形に直します。</p>
-    <div class="btns"><a class="cta" href="#contact">ご相談・お見積り（無料）</a><a class="cta ghost" href="#cause">原因を見る</a></div>
+    <div class="btns"><a class="cta" href="#fix">ここで直す（無料）</a><a class="cta ghost" href="#contact">ご相談・お見積り（無料）</a><a class="cta ghost" href="#cause">原因を見る</a></div>
     <p class="price-note">DXFの文字化けも修正します。<br>どんなお悩み事もご相談ください。</p>
   </div>
 </div></div>
+
+<section id="fix" class="dxfm-sec"><div class="wrap">
+  <p class="eyebrow">Fix here</p>
+  <h2 class="bar">ここで直す（無料・ブラウザだけで動きます）</h2>
+  <p class="sec-lead">文字化けした DXF を選ぶと、原因を見分けて直し、どの文字をどう直したかを一覧で見せます。<br>ファイルはこのブラウザの中だけで直し、どこにも送りません。<br>直らないときは、下の<a href="#contact">図面のご相談</a>へ。</p>
+  <div data-dxf-mojibake data-consult="#contact"></div>
+  <p class="tr-note">道具だけのページ：<a href="../../tools/dxf-mojibake/">DXFの文字化けを直す道具（無料）</a></p>
+</div></section>
 
 <section id="summary"><div class="wrap">
   <p class="eyebrow">Summary</p>
@@ -255,7 +272,7 @@
 <section id="faq"><div class="wrap">
   <p class="eyebrow">FAQ</p>
   <h2 class="bar">DXFの文字化けのよくある質問</h2>
-  <div class="faq rv"><details class="faq-i"><summary>DXFの文字化けは、なぜ起きるのですか？</summary><p>主な原因は、文字コードのちがい、書体（フォント）が無いこと、DXFの版が合わないことの3つです。<br>図面を作ったCADと、開くCADの組み合わせで起きます。</p></details><details class="faq-i"><summary>Jw_cad で DXF を開くと日本語が化けるのは直せますか？</summary><p>はい、修正します。<br>文字化けしたDXFをそのままお送りください。<br>Jw_cad で読める文字コードと書体のDXF、または JWW でお渡しします。</p></details><details class="faq-i"><summary>元の正しい文字が分からなくても頼めますか？</summary><p>正しい文字が分かるPDFの図面があれば、あわせてお送りください。<br>無い場合は、分かる範囲でご質問しながら進めます。</p></details><details class="faq-i"><summary>料金はいくらですか？</summary><p>DXFの文字化けの修正は、図面の内容を拝見してお見積りします。<br>お見積りは無料です。<br>図面を描き直す場合（図面のトレース）は、1枚 6,000円です。</p></details><details class="faq-i"><summary>文字化けのほかに、線やレイヤーがくずれている図面も相談できますか？</summary><p>はい。<br>どんなお悩み事もご相談ください。<br>図面を拝見して、できることをお伝えします。</p></details></div>
+  <div class="faq rv"><details class="faq-i"><summary>自分で直すことはできますか？</summary><p>このページの「<a href="#fix">ここで直す</a>」で、無料で直せます。<br>ファイルはブラウザの中だけで直し、どこにも送りません。<br>直らない所は「直せませんでした」と出るので、そのDXFをお送りください。</p></details><details class="faq-i"><summary>DXFの文字化けは、なぜ起きるのですか？</summary><p>主な原因は、文字コードのちがい、書体（フォント）が無いこと、DXFの版が合わないことの3つです。<br>図面を作ったCADと、開くCADの組み合わせで起きます。</p></details><details class="faq-i"><summary>Jw_cad で DXF を開くと日本語が化けるのは直せますか？</summary><p>はい、修正します。<br>文字化けしたDXFをそのままお送りください。<br>Jw_cad で読める文字コードと書体のDXF、または JWW でお渡しします。</p></details><details class="faq-i"><summary>元の正しい文字が分からなくても頼めますか？</summary><p>正しい文字が分かるPDFの図面があれば、あわせてお送りください。<br>無い場合は、分かる範囲でご質問しながら進めます。</p></details><details class="faq-i"><summary>料金はいくらですか？</summary><p>DXFの文字化けの修正は、図面の内容を拝見してお見積りします。<br>お見積りは無料です。<br>図面を描き直す場合（図面のトレース）は、1枚 6,000円です。</p></details><details class="faq-i"><summary>文字化けのほかに、線やレイヤーがくずれている図面も相談できますか？</summary><p>はい。<br>どんなお悩み事もご相談ください。<br>図面を拝見して、できることをお伝えします。</p></details></div>
 </div></section>
 
 <section id="order"><div class="wrap">
@@ -292,6 +309,7 @@
   <div class="flinks"><a href="../../kikai/">機械設計</a><a href="../../kenchiku/">建築・土木</a><a href="../../setsubi/">設備設計</a><a href="#faq">よくある質問</a><a href="#contact">お問い合わせ</a></div>
   <div class="flinks"><a href="../../">作図システム「SyncDraft」について</a></div>
   <span style="font-size:12px">図面の見本は、当方で作成した提案例です。</span></div></footer>
+<script src="../../tools/dxf-mojibake/widget.js?v=1127a" defer></script>
 <script src="../../site.js?v=1127b" defer></script>
 </body>
 </html>

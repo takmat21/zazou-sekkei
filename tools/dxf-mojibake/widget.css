@@ -1,0 +1,84 @@
+/* DXF の文字化けを直す（埋め込む部品）。site.css の色（--ink・--sub・--line・--bg・--soft・--main）と、角の丸い四角（6px）にそろえる */
+.dxfm{--dx-ink:var(--ink,#131417);--dx-sub:var(--sub,#555b63);--dx-line:var(--line,#e2e4e8);--dx-bg:var(--bg,#fff);--dx-soft:var(--soft,#f6f7f8);--dx-main:var(--main,#0b3bf5);--dx-ok:#127a3a;--dx-ng:#b42318;--dx-warn:#8a5a00;
+  color:var(--dx-ink);background:var(--dx-bg);border:1px solid var(--dx-line);border-radius:6px;padding:22px 24px;max-width:960px;font-size:15px;line-height:1.8;text-align:left;min-width:0;overflow-wrap:anywhere}
+@media (prefers-color-scheme: dark){.dxfm{--dx-ok:#5cd38a;--dx-ng:#ff8a80;--dx-warn:#f0c36b}}
+.dxfm *{box-sizing:border-box}
+.dxfm h3.dxfm-t{margin:0 0 6px;font-size:18px;font-weight:700;letter-spacing:.04em;line-height:1.5}
+.dxfm .dxfm-priv{display:flex;gap:8px;align-items:flex-start;margin:0 0 14px;font-size:13px;color:var(--dx-sub)}
+.dxfm .dxfm-priv b{flex:none;color:var(--dx-main);font-weight:700}
+.dxfm-drop{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;border:2px dashed var(--dx-line);border-radius:6px;background:var(--dx-soft);padding:26px 16px;cursor:pointer;transition:border-color .2s,background .2s}
+.dxfm-drop:hover,.dxfm-drop.over,.dxfm-drop:focus-within{border-color:var(--dx-main)}
+.dxfm-drop.over{background:color-mix(in srgb,var(--dx-main) 8%,var(--dx-soft))}
+.dxfm-drop input{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
+.dxfm-drop .dxfm-big{font-weight:700;font-size:16px}
+.dxfm-drop .dxfm-small{font-size:13px;color:var(--dx-sub)}
+.dxfm-btn{display:inline-block;border:0;border-radius:6px;background:var(--dx-main);color:#fff;font:inherit;font-weight:700;font-size:14px;letter-spacing:.04em;padding:9px 20px;cursor:pointer;text-decoration:none;line-height:1.5}
+.dxfm-btn:hover{filter:brightness(1.08)}
+.dxfm-btn:disabled{opacity:.5;cursor:default}
+.dxfm-btn.ghost{background:transparent;color:var(--dx-ink);border:1px solid var(--dx-line)}
+.dxfm-btn.ghost:hover{border-color:var(--dx-ink)}
+@media (prefers-color-scheme: dark){.dxfm-btn{color:#0f1115}.dxfm-btn.ghost{color:var(--dx-ink)}}
+.dxfm-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:12px 0 0}
+.dxfm-res{margin-top:18px}
+.dxfm-res[hidden]{display:none}
+.dxfm-status{display:flex;gap:12px;align-items:flex-start;border:1px solid var(--dx-line);border-left:4px solid var(--dx-main);border-radius:6px;padding:14px 16px;background:var(--dx-soft)}
+.dxfm-status.ok{border-left-color:var(--dx-ok)}
+.dxfm-status.ng{border-left-color:var(--dx-ng)}
+.dxfm-status.warn{border-left-color:var(--dx-warn)}
+.dxfm-status b{display:block;font-size:16px}
+.dxfm-status p{margin:2px 0 0;color:var(--dx-sub);font-size:14px}
+.dxfm-status .dxfm-mark{flex:none;width:28px;height:28px;border-radius:6px;display:grid;place-items:center;font-weight:800;color:#fff;background:var(--dx-main)}
+.dxfm-status.ok .dxfm-mark{background:var(--dx-ok)}
+.dxfm-status.ng .dxfm-mark{background:var(--dx-ng)}
+.dxfm-status.warn .dxfm-mark{background:var(--dx-warn)}
+@media (prefers-color-scheme: dark){.dxfm-status .dxfm-mark{color:#0f1115}}
+dl.dxfm-info{display:grid;grid-template-columns:max-content 1fr;gap:4px 14px;margin:14px 0 0;font-size:14px}
+dl.dxfm-info dt{color:var(--dx-sub)}
+dl.dxfm-info dd{margin:0;min-width:0}
+.dxfm h4{margin:20px 0 8px;font-size:15px;font-weight:700;letter-spacing:.04em}
+.dxfm-tw{border:1px solid var(--dx-line);border-radius:6px;overflow:hidden}
+table.dxfm-t{width:100%;border-collapse:collapse;font-size:14px;table-layout:fixed}
+table.dxfm-t th,table.dxfm-t td{padding:8px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--dx-line);word-break:break-all}
+table.dxfm-t thead th{background:var(--dx-main);color:var(--dx-bg);font-size:12px;letter-spacing:.08em;font-weight:600;border-bottom:0}
+table.dxfm-t tbody tr:last-child td{border-bottom:0}
+table.dxfm-t td.b{color:var(--dx-sub)}
+table.dxfm-t td.a{font-weight:700}
+table.dxfm-t .why{display:block;font-size:12px;color:var(--dx-sub);font-weight:400}
+table.dxfm-t col.c1{width:34%}table.dxfm-t col.c2{width:34%}table.dxfm-t col.c3{width:32%}
+.dxfm-n{display:inline-block;font-size:12px;color:var(--dx-sub);font-weight:400;margin-left:6px}
+@media (max-width:640px){
+  .dxfm{padding:16px}
+  table.dxfm-t,table.dxfm-t tbody,table.dxfm-t tr,table.dxfm-t td{display:block;width:100%}
+  table.dxfm-t thead,table.dxfm-t colgroup{display:none}
+  table.dxfm-t tr{border-bottom:1px solid var(--dx-line);padding:8px 12px}
+  table.dxfm-t tbody tr:last-child{border-bottom:0}
+  table.dxfm-t td{border:0;padding:2px 0}
+  table.dxfm-t td::before{content:attr(data-h);display:inline-block;min-width:3em;margin-right:8px;font-size:12px;color:var(--dx-sub);font-weight:600}
+}
+ul.dxfm-list{margin:0;padding:0;list-style:none;border:1px solid var(--dx-line);border-radius:6px}
+ul.dxfm-list li{padding:8px 12px;border-bottom:1px solid var(--dx-line);font-size:14px}
+ul.dxfm-list li:last-child{border-bottom:0}
+ul.dxfm-list .why{display:block;color:var(--dx-sub);font-size:13px}
+.dxfm-out{margin-top:20px;border-top:1px solid var(--dx-line);padding-top:16px}
+.dxfm-out fieldset{border:0;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media (max-width:640px){.dxfm-out fieldset{grid-template-columns:1fr}}
+.dxfm-out legend{font-weight:700;margin-bottom:8px;padding:0}
+.dxfm-opt{display:flex;gap:10px;align-items:flex-start;border:1px solid var(--dx-line);border-radius:6px;padding:10px 12px;cursor:pointer}
+.dxfm-opt:has(input:checked){border-color:var(--dx-main);background:color-mix(in srgb,var(--dx-main) 6%,var(--dx-bg))}
+.dxfm-opt input{margin-top:6px;accent-color:var(--dx-main)}
+.dxfm-opt b{display:block}
+.dxfm-opt span{font-size:13px;color:var(--dx-sub)}
+.dxfm-notes{margin:10px 0 0;padding-left:1.2em;font-size:13px;color:var(--dx-sub)}
+.dxfm-consult{margin-top:18px;font-size:14px;color:var(--dx-sub)}
+.dxfm-consult a{font-weight:700}
+.dxfm.compact{padding:16px}
+.dxfm.compact .dxfm-drop{padding:16px 12px}
+/* トップなどの小さな入口（開くと道具が出る） */
+details.dxfm-entry{margin:14px 0 0;max-width:600px}
+details.dxfm-entry>summary{display:inline-flex;align-items:center;gap:8px;cursor:pointer;list-style:none;font-size:14px;font-weight:700;color:var(--main,#0b3bf5);background:var(--bg,#fff);border:1px solid var(--line,#e2e4e8);border-radius:6px;padding:7px 14px;line-height:1.5}
+details.dxfm-entry>summary::-webkit-details-marker{display:none}
+details.dxfm-entry>summary::before{content:"+";font-weight:800}
+details.dxfm-entry[open]>summary::before{content:"−"}
+details.dxfm-entry>summary:hover{border-color:var(--main,#0b3bf5)}
+details.dxfm-entry .dxfm{margin-top:10px}
+details.dxfm-entry .dxfm-entry-more{margin:8px 0 0;font-size:13px}
