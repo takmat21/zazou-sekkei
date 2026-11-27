@@ -13,6 +13,7 @@
 - [JWW への変換：DXF・DWG・PDF の図面を Jw_cad の JWW に。JWW の図面を AutoCAD 向けの DXF にもします（よくある質問つき）](https://zazou-sekkei.com/trace/jww/)
 - [PDFの図面を DXF に：PDFしかない図面を、描き直して編集できる DXF にします。1枚 6,000円。スキャンしたPDF・写真にも対応（よくある質問つき）](https://zazou-sekkei.com/trace/pdf-dxf/)
 - [DXFの文字化けの修正：Jw_cad・AutoCAD で文字が読めない DXF の主な3つの原因（文字コード・書体・DXFの版）と試せること。直らない DXF の修正を受けます（よくある質問つき）](https://zazou-sekkei.com/trace/mojibake/)
+- [DXFの文字化けを直す無料の道具（ブラウザだけで動き、ファイルは送らない）](https://zazou-sekkei.com/tools/dxf-mojibake/)
 - [積算・数量拾いの外注（積算代行）：建築（内装・外壁・改修）、設備・電気の拾い出し、土木・外構の数量計算。拾い図・数量調書・内訳書（PDF・Excel）で納品。料金はお見積り（無料）・時間単価も可、電気図面の数量拾いは1枚目無料。料金と納期の早見表・よくある質問つき](https://zazou-sekkei.com/sekisan/)
 - [建築の積算・数量拾い（内装・外壁・改修）](https://zazou-sekkei.com/sekisan/kenchiku/)
 - [設備・電気の拾い出し（空調・給排水衛生・電気）](https://zazou-sekkei.com/sekisan/setsubi/)
