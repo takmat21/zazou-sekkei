@@ -1,0 +1,18 @@
+# ZAZOU 設計Works
+
+> ZAZOU株式会社の図面の仕事（図面のトレース 1枚 6,000円、機械・建築・土木・設備の図面作成、数量拾い）。在宅・全国対応。
+
+## ページ
+- [設計Works トップ（図面のトレース・図面作成の窓口）](https://zazou-sekkei.com/)
+- [図面のトレース（1枚 6,000円）：PDF・画像・手書き・JWW・DXF・DWG の図面を、編集できるCADデータに描き直します。納品は DXF（AutoCAD向け・Jw_cad向け）・JWW・PDF。納期はご相談。DXFの文字化けも修正（料金・対応形式・進め方・よくある質問つき）](https://zazou-sekkei.com/trace/)
+- [JWW への変換：DXF・DWG・PDF の図面を Jw_cad の JWW に。JWW の図面を AutoCAD 向けの DXF にもします（よくある質問つき）](https://zazou-sekkei.com/trace/jww/)
+- [PDFの図面を DXF に：PDFしかない図面を、描き直して編集できる DXF にします。1枚 6,000円。スキャンしたPDF・写真にも対応（よくある質問つき）](https://zazou-sekkei.com/trace/pdf-dxf/)
+- [DXFの文字化けの修正：Jw_cad・AutoCAD で文字が読めない DXF の主な3つの原因（文字コード・書体・DXFの版）と試せること。直らない DXF の修正を受けます（よくある質問つき）](https://zazou-sekkei.com/trace/mojibake/)
+- [機械設計：部品図・組立図・板金の展開図・3Dからの2D図面（よくある質問つき）](https://zazou-sekkei.com/kikai/)
+- [建築・土木：平面図・立面図・断面図、現況図と3D、施工の書類、数量調書・内訳書（よくある質問つき）](https://zazou-sekkei.com/kenchiku/)
+- [設備設計：空調・給排水衛生の設備図と機器表、拾い出し、図面のチェック（よくある質問つき）](https://zazou-sekkei.com/setsubi/)
+- [電気図面の数量拾い・部材拾い（1枚目は無料）](https://zazou-sekkei.com/densetsu/)
+- [トレースとは：図面をCADデータにする流れと料金の決まり方](https://zazou-sekkei.com/trace/toha/)
+- [JIS B 0001（機械製図）の要点](https://zazou-sekkei.com/kikai/jis-b-0001/)
+- [建築と機械の製図のちがい](https://zazou-sekkei.com/kikai/seizu-chigai/)
+- [数量拾いとは](https://zazou-sekkei.com/kenchiku/suryo-hiroi/)

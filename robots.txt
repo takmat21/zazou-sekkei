@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /jirei/
+
+Sitemap: https://zazou-sekkei.com/sitemap.xml
