@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://zazou-sekkei.com/</loc><lastmod>2026-11-27</lastmod></url>
-  <url><loc>https://zazou-sekkei.com/trace/</loc><lastmod>2026-11-27</lastmod></url>
+  <url><loc>https://zazou-sekkei.com/</loc><lastmod>2026-11-28</lastmod></url>
+  <url><loc>https://zazou-sekkei.com/trace/</loc><lastmod>2026-11-28</lastmod></url>
   <url><loc>https://zazou-sekkei.com/trace/before-after/</loc><lastmod>2026-11-27</lastmod></url>
   <url><loc>https://zazou-sekkei.com/trace/furui-zumen/</loc><lastmod>2026-11-27</lastmod></url>
   <url><loc>https://zazou-sekkei.com/trace/setsubi/</loc><lastmod>2026-11-27</lastmod></url>
@@ -11,7 +11,7 @@
   <url><loc>https://zazou-sekkei.com/trace/pdf-dxf/</loc><lastmod>2026-11-27</lastmod></url>
   <url><loc>https://zazou-sekkei.com/trace/mojibake/</loc><lastmod>2026-11-27</lastmod></url>
   <url><loc>https://zazou-sekkei.com/trace/toha/</loc><lastmod>2026-11-27</lastmod></url>
-  <url><loc>https://zazou-sekkei.com/sekisan/</loc><lastmod>2026-11-27</lastmod></url>
+  <url><loc>https://zazou-sekkei.com/sekisan/</loc><lastmod>2026-11-28</lastmod></url>
   <url><loc>https://zazou-sekkei.com/sekisan/kenchiku/</loc><lastmod>2026-11-27</lastmod></url>
   <url><loc>https://zazou-sekkei.com/sekisan/setsubi/</loc><lastmod>2026-11-27</lastmod></url>
   <url><loc>https://zazou-sekkei.com/sekisan/doboku/</loc><lastmod>2026-11-27</lastmod></url>
@@ -25,4 +25,7 @@
   <url><loc>https://zazou-sekkei.com/zcad/</loc><lastmod>2026-11-27</lastmod></url>
   <url><loc>https://zazou-sekkei.com/about/</loc><lastmod>2026-11-27</lastmod></url>
   <url><loc>https://zazou-sekkei.com/tools/dxf-mojibake/</loc><lastmod>2026-11-27</lastmod></url>
+  <url><loc>https://zazou-sekkei.com/trace/henkan/</loc><lastmod>2026-11-28</lastmod></url>
+  <url><loc>https://zazou-sekkei.com/sekisan/dxf-hiroi/</loc><lastmod>2026-11-28</lastmod></url>
+  <url><loc>https://zazou-sekkei.com/tools/dxf-hiroi/</loc><lastmod>2026-11-28</lastmod></url>
 </urlset>

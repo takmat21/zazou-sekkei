@@ -1,0 +1,4 @@
+/* 道具のページだけの見た目（部品の見た目は widget.css） */
+.dxt-tool{background:var(--soft)}
+.dxt-tool .dxh{margin:0}
+.dxt-tool .sec-lead{margin-bottom:28px}

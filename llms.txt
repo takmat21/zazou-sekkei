@@ -14,7 +14,11 @@
 - [PDFの図面を DXF に：PDFしかない図面を、描き直して編集できる DXF にします。1枚 6,000円。スキャンしたPDF・写真にも対応（よくある質問つき）](https://zazou-sekkei.com/trace/pdf-dxf/)
 - [DXFの文字化けの修正：Jw_cad・AutoCAD で文字が読めない DXF の主な3つの原因（文字コード・書体・DXFの版）と試せること。直らない DXF の修正を受けます（よくある質問つき）](https://zazou-sekkei.com/trace/mojibake/)
 - [DXFの文字化けを直す無料の道具（ブラウザだけで動き、ファイルは送らない）](https://zazou-sekkei.com/tools/dxf-mojibake/)
+- [JWW・DXF・DWG の変換代行：自分で無料ソフトで変換してうまくいかなかった図面の、文字化け・線の種類・レイヤーの崩れも直す。DXF・JWW・PDF で納品。お見積り（無料）（よくある質問つき）](https://zazou-sekkei.com/trace/henkan/)
+- [DXFの数量を集計する無料の道具：画層ごとの線・ポリラインの長さ、円・円弧の数、ブロックの名前ごとの個数、文字の数を表にする。縮尺と単位で長さをメートルに、CSV で保存。ブラウザだけで動き、ファイルは送らない](https://zazou-sekkei.com/tools/dxf-hiroi/)
+- [DXFから数量を拾う（積算の代行）：無料の集計の道具と、工種ごとの数量拾いの代行（よくある質問つき）](https://zazou-sekkei.com/sekisan/dxf-hiroi/)
 - [積算・数量拾いの外注（積算代行）：建築（内装・外壁・改修）、設備・電気の拾い出し、土木・外構の数量計算。拾い図・数量調書・内訳書（PDF・Excel）で納品。料金はお見積り（無料）・時間単価も可、電気図面の数量拾いは1枚目無料。料金と納期の早見表・よくある質問つき](https://zazou-sekkei.com/sekisan/)
+- [工種別の数量拾い：内装（LGS・ボード・クロス）、ダクト・配管、電気（器具・配線）、コンクリート・型枠、仮設（足場・仮囲い）。PDF・JWW・DXF・DWG（レブロ・Tfas から書き出した DXF・PDF も可）から拾う。積算代行は違法ではないの？の質問つき](https://zazou-sekkei.com/sekisan/#kojishu)
 - [建築の積算・数量拾い（内装・外壁・改修）](https://zazou-sekkei.com/sekisan/kenchiku/)
 - [設備・電気の拾い出し（空調・給排水衛生・電気）](https://zazou-sekkei.com/sekisan/setsubi/)
 - [土木の数量計算（側溝・舗装・外構）](https://zazou-sekkei.com/sekisan/doboku/)
@@ -34,4 +38,4 @@
 | 図面のトレース | 1枚 6,000円（お見積りは無料） | ご相談（図面を拝見して先にお知らせ） | DXF（AutoCAD向け・Jw_cad向け）・JWW・PDF |
 | DXFの文字化けの修正、JWW・DXF の変換だけ、CADデータの整理 | 内容を拝見してお見積り（無料） | ご相談 | DXF・JWW・PDF |
 | 電気図面の数量拾い | 1枚目は無料、2枚目からお見積り | 図面を見てからお知らせ | 色分け図面・数量表・部材表 |
-| 建築・設備・土木・外構の数量拾い・積算 | お見積り（無料）、時間単価でも可 | ご相談 | 拾い図・数量調書・内訳書・数量表（PDF・Excel） |
+| 建築・設備・土木・外構の数量拾い・積算（内装・ダクト・配管・電気・型枠・足場など工種別も） | お見積り（無料）、時間単価でも可 | ご相談 | 拾い図・数量調書・内訳書・数量表（PDF・Excel） |
