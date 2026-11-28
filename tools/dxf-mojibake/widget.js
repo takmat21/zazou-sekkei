@@ -1,3 +1,4 @@
+/*! © ZAZOU株式会社  無料でお使いいただけますが、このプログラムの複製・改変・再配布・転載・ほかのサイトやソフトへの組みこみは禁止します。 */
 /* DXF の文字化けを直す（埋め込む部品）  ZAZOU 設計Works
  * 使い方：<div data-dxf-mojibake></div> を置き、このファイルを読みこむだけ。
  *   data-title="見出し"        … 部品の中の見出し（省くと出さない）
@@ -9,7 +10,7 @@
   'use strict';
   var me = document.currentScript;
   var BASE = me && me.src ? me.src.replace(/[^/]*(\?.*)?$/, '') : '/tools/dxf-mojibake/';
-  var VER = '1127a';
+  var VER = '1128b';
 
   function ensureCss() {
     if (document.querySelector('link[data-dxfm-css]')) return;
@@ -93,6 +94,8 @@
     kids.push(h('p', { class: 'dxfm-priv' }, [h('b', { text: '送りません' }), h('span', { text: 'ファイルは、このブラウザの中だけで読んで直します。どこのサーバーにも送りません。' })]));
     kids.push(drop, h('div', { class: 'dxfm-row' }, [sampleBtn]), res);
     root.textContent = ''; kids.forEach(function (k) { root.appendChild(k); });
+    var termsP = document.createElement('p'); termsP.setAttribute('style','margin:12px 0 0;font-size:12px;line-height:1.6;opacity:.75'); termsP.textContent = 'この道具は無料でお使いいただけます（お仕事での利用も可）。プログラムの複製・改変・再配布・転載、ほかのサイトやソフトへの組みこみは禁止します。© ZAZOU株式会社'; root.appendChild(termsP);
+
 
     var cur = null;          // { an, name }
     function status(kind, title, msg) {
