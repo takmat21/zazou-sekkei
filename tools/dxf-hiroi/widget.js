@@ -20,7 +20,7 @@
   var me = document.currentScript;
   var BASE = me && me.src ? me.src.replace(/[^/]*(\?.*)?$/, '') : '/tools/dxf-hiroi/';
   var ENGINE = BASE.replace(/dxf-hiroi\/$/, 'dxf-mojibake/');
-  var VER = '1128b';
+  var VER = '1128c';
 
   function ensureCss() {
     if (document.querySelector('link[data-dxh-css]')) return;
@@ -186,8 +186,6 @@
     root.textContent = '';
     [h('p', { class: 'dxh-priv' }, [h('b', { text: '送りません' }), h('span', { text: 'ファイルは、このブラウザの中だけで読んで数えます。どこのサーバーにも送りません。' })]),
       drop, h('div', { class: 'dxh-row' }, [sampleBtn]), res].forEach(function (k) { root.appendChild(k); });
-    var termsP = document.createElement('p'); termsP.setAttribute('style','margin:12px 0 0;font-size:12px;line-height:1.6;opacity:.75'); termsP.textContent = 'この道具は無料でお使いいただけます（お仕事での利用も可）。プログラムの複製・改変・再配布・転載は禁止します。ほかのサイトやソフトに組みこむときは、ZAZOU株式会社の許可が必要です。© ZAZOU株式会社'; root.appendChild(termsP);
-
 
     function status(kind, title, msg) {
       return h('div', { class: 'dxh-status ' + kind }, [h('span', { class: 'dxh-mark', 'aria-hidden': 'true', text: kind === 'ok' ? '✓' : kind === 'ng' ? '!' : 'i' }),
